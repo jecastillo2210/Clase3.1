@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Página uno</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li ><a href="#page2">Ejemplos de Clase</a></li>
+            <li><a href="#page3">Página tres</a></li>
+			<li><a href="#page4">Página cuatro</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-theme="e">
+	<div data-role="header">
+		<h1>Página dos</h1>
+
+	</div>
+	<div data-role="content">	
+		<form>
+         <label for="check1">
+         <input type="checkbox" name="uno" id="check1">Hola
+         </label>
+         
+         <input type="checkbox" name="dos" id="check2">
+         <label for="check2"> Hola 
+         </label>
+         
+        
+         <fieldset data-role="controlgroup">
+         <legend> Vertical: </legend>
+          <input type="checkbox" name="Uno" id="uno">
+           <label for="uno"> Uno </label> 
+           <input type="checkbox" name="dos" id="dos">
+           <label for="dos"> Dos </label>
+           <input type="checkbox" name="tres" id="tres">
+           <label for="tres"> Tres </label>  
+           </fieldset>    
+           
+         <fieldset data-role="controlgroup" data-type="horizontal">
+         <legend> Horizontal: </legend>
+          <input type="checkbox" name="Uno" id="uno">
+           <label for="uno"> Uno </label> 
+           <input type="checkbox" name="dos" id="dos">
+           <label for="dos"> Dos </label>
+           <input type="checkbox" name="tres" id="tres">
+           <label for="tres"> Tres </label>  
+           </fieldset>    
+           
+        <fieldset data-role="controlgroup" >
+         <legend> Botones Radio: </legend>
+          <input type="radio" name="Uno" id="uno1">
+           <label for="uno1"> Uno </label> 
+           <input type="radio" name="dos" id="dos2">
+           <label for="dos2"> Dos </label>
+           <input type="radio" name="tres" id="tres3">
+           <label for="tres3"> Tres </label>  
+           </fieldset> 
+           
+           <label for="texto"> Ingresa tu nombre: </label>
+           <input type="text" name="caja" id="texto1" value=""
+           <label for="texto"> Describe: </label>
+           <textarea name="area" id="area" value="Describe algo"></textarea>
+         
+         <div class="ui-field-contain">
+          <label for="seleccion"> Selecciona </label>
+           <select name="seleccion" id="seleccion">
+            <option value="1"> Puebla </option>
+            <option value="2"> Tlaxcala </option>
+            <option value="3"> Oaxaca </option>
+            <option value="4"> Culiacan </option>
+            </select>
+            </div>
+		
+        <div class="ui-field-contain">
+         <label for="seleccion" > Selecciona </label>
+          <select name="seleccion" id="seleccion">
+           <option> Elige ... </option>
+            <optgroup label="Grupo 1">
+             <option value="1"> Puebla </option>
+             <option value="2"> Tlaxcala </option>
+             <option value="3"> Oaxaca </option>
+             <option value="4"> Hidalgo </option>
+            </optgroup>
+            <optgroup label="Grupo 2">
+             <option value="1"> Sonora </option>
+             <option value="2"> Sinaloa </option>
+             <option value="3"> Nayarit </option>
+             <option value="4"> Chihuahua </option>
+            </optgroup>
+          </select>
+          </div>
+          
+          
+        <div class="ui-field-contain">
+         <label for="seleccion" > Lista Larga </label>
+          <select name="seleccion" id="seleccion" data-native-menu="false">
+           <option> Elige ... </option>
+            <optgroup label="Grupo 1">
+             <option value="1"> Puebla </option>
+             <option value="2"> Tlaxcala </option>
+             <option value="3"> Oaxaca </option>
+             <option value="4"> Hidalgo </option>
+             <option value="5"> Sonora </option>
+             <option value="6"> Sinaloa </option>
+             <option value="7"> Nayarit </option>
+             <option value="8"> Chihuahua </option>
+            </optgroup>
+          </select>
+          </div>
+
+        <div class="ui-field-contain">
+         <label for="seleccion" > Lista Larga </label>
+          <select name="seleccion" id="seleccion" data-native-menu="false" multiple="multiple">
+           <option> Elige ... </option>
+            <optgroup label="Grupo 1">
+             <option value="1"> Puebla </option>
+             <option value="2"> Tlaxcala </option>
+             <option value="3"> Oaxaca </option>
+             <option value="4"> Hidalgo </option>
+             <option value="5"> Sonora </option>
+             <option value="6"> Sinaloa </option>
+             <option value="7"> Nayarit </option>
+             <option value="8"> Chihuahua </option>
+            </optgroup>
+          </select>
+          </div>
+
+
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+</body>
+</html>
